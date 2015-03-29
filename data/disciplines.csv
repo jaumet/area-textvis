@@ -1,0 +1,37 @@
+"Literature"
+"Politics"
+"Biology"
+"Social networks"
+"Text comparation"
+"News"
+"Search  engines"
+"Text visualization"
+"Machine Learning"
+"wikipedia"
+"Visualization"
+"Search engine"
+"Media art"
+"Internet"
+"Linguistics"
+"Wordnet, crowdsourced lexical database"
+"natural language processing, interactive visualization, data mining semantic searching"
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+"Literature"
+"Politics"
+"Biology"
+"Sociology" -> "Social networks"
+"Linguistics" -> "Text comparation", "Wordnet, crowdsourced lexical database"
+"News"
+"Art" -> "Media art"
+
+"Internet" -> "Search engines", "Search engine", 
+"wikipedia"
+"Computing" -> "Machine Learning", "natural language processing, interactive visualization, data mining semantic searching"
+
+
+"Visualization"
+"Text visualization"
+
+
