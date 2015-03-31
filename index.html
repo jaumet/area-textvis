@@ -267,7 +267,7 @@
         var filter_results = 0;
         DATA.sort();
 				$.each(DATA, function(index, value) {
-					var content = "<ul>";
+					var content = "";
 					if(value[PARAM1] == param_val1) {
 						n = count/dim_node;
 						if (typeof n === 'number' && n % 1 == 0) {
@@ -288,7 +288,7 @@
                   break;
                 case "text":
                   if (i == "image_name") {
-                    my_el_img += "<img width=\"40%\" src=\"./images/thumbs/"+el+"\" />";
+                    my_el_img += "<img width=\"40%\" src=\"./images/thumbs/"+el+"\" align=\"left\"/>";
                     img_name = el
                   } else { 
                     my_el_text += "<p>"+getHumanName(FIELDS[0], i)+": <b>"+el+"</b></p>";
@@ -314,7 +314,7 @@
 							mycolor = "#000000"
 						}
             if (img_name == "") { img_name="no.png";}
-            content += "<p>"+my_el_text+"</p><p>&nbsp;</p><p>"+my_el_img+"</p><p>"+my_el_number+my_el_url+"</p>";
+            content += my_el_img+"<p>"+my_el_text+"</p><p>&nbsp;</p><p>"+my_el_number+my_el_url+"</p>";
 						draw_node(my_x, my_y, nodex, nodey, value. id, content, mycolor, stroke, areaSVG, String(FILTER), img_name);
 						count ++;
 						content = "";

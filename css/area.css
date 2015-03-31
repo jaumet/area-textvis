@@ -325,3 +325,9 @@ select, input {
   height:450px;
   border:0px solid red;
 }
+
+#node_info_data img {
+  padding:20px;
+}
+
+
