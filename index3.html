@@ -344,7 +344,7 @@
                 .attr('y', 4)
                 .attr('width', 10)
                 .attr('height', 10)
-*/
+
 
            areaSVG.append('image')
                   .attr('xlink:href', 'http://localhost/area-textvis/images/thumbs/'+img_name)
@@ -363,17 +363,44 @@
 	               .style("fill", "transparent");
          });
 
+*/
 
 
-          areaSVG.append("svg:image")
+        var defs = areaSVG.append("defs").attr("id", id)
+        
+        var areaSVG = defs.append("pattern")
+            .attr("id", "p"+id)
+            .attr('patternUnits', 'userSpaceOnUse')
+            .attr('x', 4)
+            .attr('y', 4)
+            .attr('width', 10)
+            .attr('height', 10);
+
+        areaSVG.append("svg:image")
           .attr('x',x)
           .attr('y',y)
           .attr('width', nodex)
           .attr('height', nodey)
-          .attr("xlink:href","images/thumbs/"+img_name)
+          .attr('xlink:href', 'http://localhost/area-textvis/images/thumbs/'+img_name)
           					.on('mouseover', function(d,i) { 
 			    		d3.select(this).style('fill','lightblue'); 
-			   	})
+			   	});
+			  areaSVG.append("circle")
+					.attr("cx", x+17)
+ 	        .attr("cy", y+13)
+	        .attr("r", 10)
+					.attr("width", nodex)
+					.attr("height", nodey)
+					.attr("stroke", "#000000")
+					.style("stroke-width", "1px")
+					.attr('class','node')
+					.attr("id", id)
+					.style('fill',"white")
+			    .attr("fill", "url(#areaSVG)")
+			   	
+			   	
+			   	
+			   	
 					.on('mouseout', function(d,i) { 
 					  if ( color.length < 3) { color = "#000000"}
 	        		d3.select(this).attr("stroke", "#ffffff")

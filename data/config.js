@@ -68,7 +68,7 @@ var FIELDS = [
   "Data_size":
   			{ human: "Data size", areafilter: "0", type:"text"},
   "Access":
-        { human: "(2015) any demo?", areafilter: "0", type:"text"},
+        { human: "Any demo (2015)?", areafilter: "0", type:"text"},
   "Scenario":
         { human: "Kind of scenario", areafilter: "0", type:"text"}
 	}

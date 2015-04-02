@@ -333,5 +333,8 @@ select, input {
 	background-color:#ffffff;
 	padding:0;
 	padding-left:2px;
-	paddingright-:2px;
+	padding-right:2px;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border:1px solid;
 }
