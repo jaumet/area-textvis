@@ -1259,7 +1259,7 @@ var DATA =
 	"Search": "Search-results", 
 	"Data_size": "Small", 
 	"Access":"no", 
-	"Scenario": "Real-scenario"},
+	"Scenario": "Real-case"},
 
 {"id": 63, 
 	"name": "Text Theme: Automatic Analysis, Theme Generation, and Summarization of Machine-Readable Texts", 
