@@ -348,10 +348,11 @@
 
            areaSVG.append('image')
                   .attr('xlink:href', 'http://localhost/area-textvis/images/thumbs/'+img_name)
-                  .attr('x', 4)
-                  .attr('y', 4)
-                  .attr('width', 10)
-                  .attr('height', 10)
+                  .attr('id', id)
+                  .attr('x', x)
+                  .attr('y', y+4)
+                  .attr('width', 17)
+                  .attr('height', 17)
      			.style('fill',color)
 					.on("click", function(){ 
                d3.select(this)
@@ -361,25 +362,24 @@
          .on("mouseout", function(){ 
                d3.select(this)
 	               .style("fill", "transparent");
-         });
-
-
-
-          areaSVG.append("svg:image")
-          .attr('x',x)
-          .attr('y',y)
-          .attr('width', nodex)
-          .attr('height', nodey)
-          .attr("xlink:href","images/thumbs/"+img_name)
-          					.on('mouseover', function(d,i) { 
-			    		d3.select(this).style('fill','lightblue'); 
-			   	})
-					.on('mouseout', function(d,i) { 
+         })
+         .on('mouseout', function(d,i) { 
 					  if ( color.length < 3) { color = "#000000"}
 	        		d3.select(this).attr("stroke", "#ffffff")
                     				 .style("stroke-width", "30px"); 
-	      	})
-	      	.on('click', function(d,i) {
+	      	});
+          areaSVG.append("circle")
+					  .attr("cx", x+9)
+   	        .attr("cy", y+12)
+	          .attr("r", 11)
+					  .attr("width", nodex)
+					  .attr("height", nodey)
+					  .attr("stroke", color)
+					  .style("stroke-width", "4px")
+					  .attr('class','node')
+					  .attr("id", id)
+					  .style('fill',"transparent")
+		      	.on('click', function(d,i) {
 		      		d3.select(this);
 		      		// Filter content and highlights one-word query in node_info text: 
               if (FILTER.length >= 2) { 
@@ -397,7 +397,6 @@
 	  	    		$("#node_info").css("display", "block");
 	        		d3.select(this).style('fill',color);
           });
-
 			};
 			
 			///////////////////////
