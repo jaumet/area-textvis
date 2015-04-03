@@ -10,18 +10,24 @@
 	 no: (there is none of the above. An accessible paper is not counted here.
 	 adopted: it means that the case can be found in several olaces today, applied. A typical acse is when a technique is adopted as online service (like manyeyes)
 
+	Case 1: (TextArc, 2002)	"Access":"no", "Scenario": "Real-case" ---> This was IMHO, the good way. Did  not work out for other reasons
 
 - Scenario: Real-case, Concept-proof, Dummy-data, Other, None
 	[ Real-case -> is RC if;
 								 - The case is applied to a "coherent" collection (to wikipedia, to conference papers -text storm, ...)
-								 - The case is part of a bigegr study of the data (case 44, Joel Deshaye and Peter Stoicheff)
-								 - The case is accessible and usable quering live (webseer, area, etc)
+								 - The case is applied in a "historical" context (or specific event) to real life data, even if it is for a period of time (like twits streams during Arab spring)
+								 - The case is part of a much bigger study of the data (case 44, Joel Deshaye and Peter Stoicheff)
+								 - The case is accessible as a SaaS and it can be used (online) (webseer, area, etc)
+								 - 
 
 
 - Year	21
   		1976, 1992, 1993, 1994, 1995, 1996, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
 - Discipline	13
-  		XXXX, Linguistics, Law, Internet, Visualization, Wikipedia, Literature, News, Computing, Art, Biology, Politics, Sociology, Archiving
+  		XXXX, Linguistics, Law, Internet, Visualization, Wikipedia, Literature, News, Computing, Art, Biology, Politics, Sociology, 
+  		Archiving, Mathematica
+	  		*** "Visualization" can mean: (1) either the work is only to introduze a new vis technique, no matter what is the data and the 
+	  		context/scebnario, (2) either there are severaldatasets and scenarios represented in order to prove thw new vis technique presented.
 - Single or Collection	3
   		XXXX, Collection, Single
 - Text subclasses	5
